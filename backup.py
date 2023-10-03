@@ -109,11 +109,11 @@ def gerabackup():
 ##FUNCAO QUE ENVIA OS LOGS DE BACKUP PARA O ADMIN
 def send_email(pathlog):
    try:
-     mailadmin="bruno@terminalx.net.br"
-     senduser="bruno@terminalx.net.br"
-     copia="ti@exsto.com.br"
-     smtp="smtp.hostinger.com.br:587"
-     senha="Bmed2007#2020"
+     mailadmin="user@company.com.br"
+     senduser="user@company.com.br"
+     copia="user@company.com.br"
+     smtp="smtp.company.com.br:porta"
+     senha=password"
      command="/usr/local/bin/sendEmail -f %s -t %s -cc %s -u 'Logs de backup AD-EXSTO' -a %s -s %s -o tls=no -xu %s -xp %s -m 'Seguem logs de backup AD-EXSTO'" % (senduser,mailadmin,copia,pathlog,smtp,mailadmin,senha)
      subprocess.call(command,shell=True)
    # Create a text/plain message

@@ -114,7 +114,7 @@ def send_email(pathlog):
      copia="user@company.com.br"
      smtp="smtp.company.com.br:porta"
      senha=password"
-     command="/usr/local/bin/sendEmail -f %s -t %s -cc %s -u 'Logs de backup AD-EXSTO' -a %s -s %s -o tls=no -xu %s -xp %s -m 'Seguem logs de backup AD-EXSTO'" % (senduser,mailadmin,copia,pathlog,smtp,mailadmin,senha)
+     command="/usr/local/bin/sendEmail -f %s -t %s -cc %s -u 'Logs de backup AD' -a %s -s %s -o tls=no -xu %s -xp %s -m 'Seguem logs de backup AD'" % (senduser,mailadmin,copia,pathlog,smtp,mailadmin,senha)
      subprocess.call(command,shell=True)
    # Create a text/plain message
    

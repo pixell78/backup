@@ -124,9 +124,9 @@ def send_email(pathlog):
 
 ### ABRE CONEXAO COM A VPN ###
 def vpn_conect():
-   pathovpnfile = '/root/backup_domingos.ovpn'
+   pathovpnfile = '/root/backup.ovpn'
    conect = 'openvpn --config %s &' % pathovpnfile
-   ip_tunel = '10.215.86.1'
+   ip_tunel = 'ip_gate_tunel'
    try:
      subprocess.call(conect,shell=True)
      #subprocess.check_output([conect])
@@ -199,7 +199,7 @@ def backup_nas_vpn():
 
 #CRIA BACKUP ESPELHO EM HD EXTERNO
 def backup_hd_espelho():
-    #disk = '/dev/sdb'        #Define onde está a partição que será usada para guardar o backup
+    #disk = '/dev/sdx'        #Define onde está a partição que será usada para guardar o backup
     horaInicio = time.strftime('%H:%M:%S')
     pathlog = geralog()
     backup_nas, backup_nas1, backup_local, backup1_local, backup, backup1, pathdestino_remoto_vpn_dados, pathdestino_remoto_vpn_home, pathdestino_remoto_lan_dados,pathdestino_remoto_lan_home,pathdestino_local_dados,pathdestino_local_home = gerabackup()

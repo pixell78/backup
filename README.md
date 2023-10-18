@@ -10,7 +10,7 @@ Este script gera backups do sistema de arquivos em diferentes locais:
 
 - Backup local - HD ou partição local
 - Backup em rede local - Em algum compartilhamento de arquivo ou NAS local
-- Backup em VPN - Em alguma rede remota via túnel OpenVPN
+- Backup em VPN - Em alguma rede remota via túnel OpenVPN, é necessário ter um servidor OpenVpn na ponta para receber o backup.
 
 Requisitos para o funcionamento:
 - OpenVpn Ok.
